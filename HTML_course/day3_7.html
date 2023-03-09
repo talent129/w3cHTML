@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>脚本</title>
+</head>
+<body>
+  <script>
+    document.write("Hello World!")
+  </script>
+  <noscript>抱歉，你的浏览器不支持 JavaScript!</noscript>
+
+    <br />
+    <hr />
+    <script>
+        document.write("<p>This is a paragraph</p>");
+    </script>
+
+    <br />
+    <hr />
+    <p id="demo">JavaScript can react to events. Like the click of a button.</p>
+
+    <script>
+        // JavaScript 事件响应:
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript";
+            // 处理HTML样式
+            document.getElementById("demo").style.color = "#ff0000";
+        }
+    </script>
+    <button type="button" onclick="myFunction()">Click me</button>
+
+</body>
+</html>
