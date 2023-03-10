@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用 HTML DOM 来分配事件</title>
+</head>
+<body>
+  <button id="myBtn">Click me</button>
+    <script>
+        document.getElementById("myBtn").onclick = function () {displayDate()};
+
+        function displayDate() {
+            document.getElementById("demo").innerText = Date();
+        }
+    </script>
+    <p id="demo"></p>
+</body>
+</html>

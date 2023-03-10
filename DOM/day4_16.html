@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <input type="button" onclick="document.body.style.backgroundColor = 'tomato';" value="change bg color-tomato">
+    <br />
+    <hr />
+    <p>由函数执行上面相同的代码:</p>
+    <script>
+        function changeBGColor() {
+            document.body.style.backgroundColor = "green";
+        }
+    </script>
+    <input type="button" onclick="changeBGColor()" value="change bg color-green">
+  <br />
+  <hr />
+    <p id="p1">改变文本</p>
+    <script>
+        function changeText() {
+            document.getElementById("p1").innerText = "我被改变了";
+        }
+    </script>
+    <input type="button" onclick="changeText()" value="change text">
+</body>
+</html>

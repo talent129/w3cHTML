@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>childNodes 和 nodeValue</title>
+</head>
+<body>
+  <p id="intro">Hello World</p>
+    <script>
+        x = document.getElementById("intro")
+        alert(x.childNodes[0].nodeValue)
+    </script>
+
+    <script>
+        function windowSize() {
+            w = document.body.clientWidth;
+            h = document.body.clientHeight;
+            alert("w:" + w);
+            alert("h:" + h);
+        }
+    </script>
+    <button type="button" onclick="windowSize()">Click me</button>
+</body>
+</html>

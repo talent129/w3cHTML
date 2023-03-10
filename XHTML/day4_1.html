@@ -5,6 +5,20 @@
     <title>Title</title>
 </head>
 <body>
+    <ol>
+        <li>XHTML 属性必须使用小写</li>
+        <li>XHTML 属性值必须用引号包围</li>
+        <li>XHTML 属性最小化也是禁止的</li>
+    </ol>
 
+    <p>注：在HTML中有时候会存在name=value的情况（即属性名等于属性值的情况），在不规范的HTML中，可以使用完整的写法，也可以使用最小化属性写法（只写属性名，不写属性值，这个时候属性值等于属性名）</p>
+    <p>以check属性为例:</p>
+    <form>
+        <label>性别：</label><br />
+        男：<input type="radio" name="sex" value="男" checked /><br />
+        女：<input type="radio" name="sex" value="女" checked ="checked"/>
+    </form>
+    <p>在HTML中，这两种写法都是可以的。但是在XHTML中，不能使用属性最小化写法。</p>
+    <p>另外，在很多地方，可能会将属性最小化表达为缩写或者简写，其想表达的意思可能与原意相同。但使用属性最小化的说法比较官方也比较通用 </p>
 </body>
 </html>

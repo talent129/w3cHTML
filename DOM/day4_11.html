@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementsByTagName</title>
+</head>
+<body>
+    <p>Hello World</p>
+    <div id="div">
+        <p>Beijing</p>
+        <p>Shanghai</p>
+    </div>
+    <script>
+        document.write("This is: " + document.getElementById("div").getElementsByTagName("p")[0].innerHTML);
+    </script>
+</body>
+</html>

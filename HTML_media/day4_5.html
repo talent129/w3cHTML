@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>播放音频-最好的 HTML 解决方法</title>
+</head>
+<body>
+    <p>使用了两个不同的音频格式。HTML5 audio 元素会尝试以 mp3 或 ogg 来播放音频。如果失败，代码将回退尝试 embed 元素</p>
+    <br />
+  <audio controls height="100" width="100">
+      <source src="song.flac" type="audio/mpeg">
+      <source src="song.flac" type="audio/ogg">
+      <embed height="50" widht="100" src="song.flac">
+  </audio>
+</body>
+</html>

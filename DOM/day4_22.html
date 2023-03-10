@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onload 和 onunload 事件</title>
+</head>
+<body onload="checkCookies()">
+    <script>
+        function checkCookies() {
+            if (navigator.cookieEnabled == true) {
+                alert("cookies are enabled");
+            } else {
+                alert("cookies are not enabled");
+            }
+        }
+    </script>
+    <p>打开这个网页时会检查当前网页cookie是否可用，alert形式弹出</p>
+</body>
+</html>

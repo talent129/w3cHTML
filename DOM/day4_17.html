@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML DOM - 元素</title>
+</head>
+<body>
+    <div id="d1">
+        <p>Hello World</p>
+        <p>Hi</p>
+    </div>
+    <script>
+        let p = document.createElement("p");
+        let node = document.createTextNode("OK");
+        p.appendChild(node);
+
+        let element = document.getElementById("d1");
+        element.appendChild(p);
+    </script>
+</body>
+</html>
